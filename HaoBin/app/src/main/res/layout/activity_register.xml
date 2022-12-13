@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/zzz"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".Register">
+
+    <TextView
+        android:id="@+id/TitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/dogs"
+        android:text="Register"
+        android:textColor="#808080"
+        android:textSize="30dp"
+        android:textStyle="italic" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/LogoImage"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/fc" />
+
+        <!--标题-->
+
+
+        <EditText
+            android:id="@+id/UserNameEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/translucent_edit"
+            android:hint="输入用户名"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:textSize="24dp"
+            android:windowSoftInputMode="adjustResize" />
+
+
+        <!--密码输入-->
+        <EditText
+            android:id="@+id/PassWordEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/translucent_edit"
+            android:hint="输入密码"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:textSize="24dp" />
+
+
+        <!--二次密码输入-->
+        <EditText
+            android:id="@+id/PassWordAgainEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/translucent_edit"
+            android:hint="再次输入密码"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:textSize="24dp" />
+
+
+        <!--邮箱输入-->
+        <EditText
+            android:id="@+id/EmailEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/translucent_edit"
+            android:hint="输入邮箱地址"
+            android:maxLength="16"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:textSize="24dp" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp">
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/man"
+                    android:text="靓仔"
+                    android:textColor="#84c6f4"
+                    android:textSize="18dp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="230px"
+                    android:drawableLeft="@drawable/woman"
+                    android:text="靓妹"
+                    android:textColor="#D81B60"
+                    android:textSize="18dp" />
+            </RadioGroup>
+
+        </RelativeLayout>
+
+        <!--嵌套线性布局-->
+        <LinearLayout
+            android:id="@+id/ButtonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="潮流"
+                    android:textColor="#71d7ca"
+                    android:textSize="19dp" />
+
+                <CheckBox
+                    android:id="@+id/two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="经典"
+                    android:textColor="#71d7ca"
+                    android:textSize="19dp" />
+
+                <CheckBox
+                    android:id="@+id/three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="摇滚"
+                    android:textColor="#71d7ca"
+                    android:textSize="19dp" />
+
+                <CheckBox
+                    android:id="@+id/four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="说唱 "
+                    android:textColor="#71d7ca"
+                    android:textSize="19dp" />
+            </LinearLayout>
+
+
+            <!--立即注册按钮-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/SignUpButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/translucent_button"
+                    android:padding="15dp"
+                    android:text="立即注册"
+                    android:textColor="@color/white"
+                    android:textSize="24dp" />
+
+                <!--返回登录按钮-->
+                <Button
+                    android:id="@+id/BackLoginButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/translucent_button"
+                    android:padding="15dp"
+                    android:text="返回登录"
+                    android:textColor="@color/white"
+                    android:textSize="24dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/www"
+    android:orientation="vertical"
+    tools:context=".Login">
+
+    <TextView
+        android:id="@+id/TitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Login"
+        android:drawableLeft="@drawable/cat_hh"
+        android:textStyle="italic"
+        android:textColor="#808080"
+        android:textSize="30dp" />
+
+
+    <!--使用线性布局-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.8"
+        android:orientation="vertical">
+
+        <!--Logo-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/set"
+                android:layout_width="48dp"
+                android:layout_gravity="center_vertical"
+                android:dropDownSelector="#9bcade"
+                android:popupBackground="#f6f2e7"
+                android:layout_height="48dp" />
+            <ImageView
+                android:id="@+id/LogoImage"
+                android:layout_marginLeft="-100dp"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:src="@drawable/cure" />
+        </LinearLayout>
+
+
+        <!--标题-->
+
+        <!--用户名输入-->
+        <EditText
+            android:alpha="0.8"
+            android:id="@+id/UserNameEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/translucent_edit"
+            android:hint="输入用户名"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:text="root"
+            android:textSize="24dp" />
+
+        <!--密码输入-->
+        <EditText
+            android:alpha="0.8"
+            android:id="@+id/PassWordEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/translucent_edit"
+            android:hint="输入用户密码"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:text="123456"
+            android:textSize="24dp" />
+
+
+        <!--嵌套线性布局-->
+        <LinearLayout
+            android:alpha="0.96"
+            android:id="@+id/LayoutButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <!--登录按钮-->
+            <Button
+                android:id="@+id/LoginButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/translucent_button"
+                android:padding="15dp"
+                android:text="登   录"
+                android:textColor="@color/white"
+                android:textSize="24dp" />
+
+            <!--注册按钮-->
+            <Button
+                android:id="@+id/SignUpButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/translucent_button"
+                android:padding="15dp"
+                android:text="注   册"
+                android:textColor="@color/white"
+                android:textSize="24dp" />
+
+        </LinearLayout>
+        <!--        <LinearLayout-->
+        <!--            android:alpha="0.7"-->
+        <!--            android:layout_marginTop="200dp"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginLeft="10dp"-->
+        <!--            android:orientation="horizontal">-->
+
+        <!--            <Button-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:text="上次登录"-->
+        <!--                android:background="@drawable/button"/>-->
+
+        <!--            <Button-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:text="忘记密码"-->
+        <!--                android:background="@drawable/button"/>-->
+
+        <!--            <Button-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:text="修改密码"-->
+        <!--                android:background="@drawable/button"/>-->
+
+        <!--            <Button-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:text="注销账号"-->
+        <!--                android:background="@drawable/button"/>-->
+
+        <!--        </LinearLayout>-->
+    </LinearLayout>
+
+</LinearLayout>

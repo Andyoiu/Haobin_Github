@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinnername">
+        <item>Seting</item>
+        <item>记住密码</item>
+        <item>忘记密码</item>
+        <item>修改密码</item>
+        <item>注销账号</item>
+    </string-array>
+</resources>
